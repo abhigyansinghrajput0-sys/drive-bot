@@ -1,0 +1,14 @@
+{
+  "name": "drive-bot",
+  "version": "1.0.0",
+  "description": "Telegram Cloud Drive Bot",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}
+
