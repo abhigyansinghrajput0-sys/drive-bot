@@ -1,21 +1,7 @@
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 10000;
-
-app.get('/', (req, res) => {
-  res.send('Telegram Bot is Running!');
-});
-
-app.listen(port, () => {
-  console.log(`App listening on port ${port}`);
-});
-
-// Yahan se aapka bot chalu hoga
-const TelegramBot = require('node-telegram-bot-api');
-const token = process.env.BOT_TOKEN;
-const bot = new TelegramBot(token, {polling: true});
-
-bot.onText(/\/start/, (msg) => {
-  bot.sendMessage(msg.chat.id, "Welcome Bhai Abhigyan! Aapka Cloud Drive Bot active hai.");
-});
-
+"dependencies": {
+  "axios": "^1.7.2",
+  "express": "^4.19.2",
+  "googleapis": "^144.0.0",
+  "node-telegram-bot-api": "^0.66.0",
+  "streamifier": "^0.1.1"
+}
